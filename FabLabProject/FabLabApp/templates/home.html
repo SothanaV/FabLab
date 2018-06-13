@@ -31,7 +31,8 @@
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader">
-			<img src="/static/img/logo.png" alt="">
+			<!-- <img src="/static/img/logo.png" alt=""> -->
+			<img src="/static/img/FL.PNG" alt="">
 			<h2>Loading.....</h2>
 		</div>
 	</div>
@@ -40,17 +41,18 @@
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="logo">
-			<img src="/static/img/logo.png" alt=""><!-- Logo -->
+			<!-- <img src="/static/img/logo.png" alt="">Logo -->
+			<img src="/static/img/FL.PNG" alt="" width="60px" height="60px">
 		</div>
 		<!-- Navigation -->
 		<div class="responsive"><i class="fa fa-bars"></i></div>
 		<nav>
 			<ul class="menu-list">
-				<li class="active"><a href="home.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="elements.html">Elements</a></li>
+				<li class="active"><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'services' %}">Services</a></li>
+				<li><a href="{% url 'blog' %}">Blog</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+				<li><a href="{% url 'elements' %}">Elements</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -61,7 +63,7 @@
 	<div class="hero-section">
 		<div class="hero-content">
 			<div class="hero-center">
-				<img src="/static/img/big-logo.png" alt="">
+				<img src="/static/img/FL.png" alt="" width="400px" height="300px">
 				<p>Get your freebie template now!</p>
 			</div>
 		</div>

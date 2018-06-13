@@ -18,6 +18,6 @@ from django.urls import path,include
 from FabLabApp import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fablab/', include('FabLabApp.urls')),
-
+    # path('fablab/', include('FabLabApp.urls')),
+    path('', include('FabLabApp.urls')),
 ]

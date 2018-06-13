@@ -13,11 +13,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700" rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/flaticon.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/> -->
+
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="/static/css/flaticon.css"/>
+	<link rel="stylesheet" href="/static/css/owl.carousel.css"/>
+	<link rel="stylesheet" href="/static/css/style.css"/>
 
 
 	<!--[if lt IE 9]>
@@ -30,7 +36,7 @@
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader">
-			<img src="img/logo.png" alt="">
+			<img src="/static/img/logo.png" alt="">
 			<h2>Loading.....</h2>
 		</div>
 	</div>
@@ -39,17 +45,24 @@
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="logo">
-			<img src="img/logo.png" alt=""><!-- Logo -->
+			<img src="/static/img/logo.png" alt=""><!-- Logo -->
 		</div>
 		<!-- Navigation -->
 		<div class="responsive"><i class="fa fa-bars"></i></div>
 		<nav>
-			<ul class="menu-list">
+			<!-- <ul class="menu-list">
 				<li><a href="home.html">Home</a></li>
 				<li class="active"><a href="services.html">Services</a></li>
 				<li><a href="blog.html">Blog</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="elements.html">Elements</a></li>
+			</ul> -->
+			<ul class="menu-list">
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li class="active"><a href="{% url 'services' %}">Services</a></li>
+				<li><a href="{% url 'blog' %}">Blog</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+				<li><a href="{% url 'elements' %}">Elements</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -239,7 +252,7 @@
 				<!-- Devices -->
 				<div class="col-md-4 col-sm-4 devices">
 					<div class="text-center">
-						<img src="img/device.png" alt="">
+						<img src="/static/img/device.png" alt="">
 					</div>
 				</div>
 				<!-- feature item -->
@@ -291,7 +304,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="sv-card">
 						<div class="card-img">
-							<img src="img/card-1.jpg" alt="">
+							<img src="/static/img/card-1.jpg" alt="">
 						</div>
 						<div class="card-text">
 							<h2>Get in the lab</h2>
@@ -303,7 +316,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="sv-card">
 						<div class="card-img">
-							<img src="img/card-2.jpg" alt="">
+							<img src="/static/img/card-2.jpg" alt="">
 						</div>
 						<div class="card-text">
 							<h2>Projects online</h2>
@@ -315,7 +328,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="sv-card">
 						<div class="card-img">
-							<img src="img/card-3.jpg" alt="">
+							<img src="/static/img/card-3.jpg" alt="">
 						</div>
 						<div class="card-text">
 							<h2>SMART MARKETING</h2>
@@ -398,11 +411,11 @@
 
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="/static/js/jquery-2.1.4.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/magnific-popup.min.js"></script>
+	<script src="/static/js/owl.carousel.min.js"></script>
+	<script src="/static/js/circle-progress.min.js"></script>
+	<script src="/static/js/main.js"></script>
 </body>
 </html>
